@@ -214,7 +214,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Cryptocurrency Trading Bot",
-    period: "Since 2021",
+    period: "2021 - 2026",
     description:
       "Developed a fully automated trading system in C# integrating the Gemini Exchange API for real-time order execution using custom indicator-based logic. Added automated daily summary Telegram reports and achieved sustained profitability since 2022.",
     tags: ["C#", ".NET", "Windows"],
