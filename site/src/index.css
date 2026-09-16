@@ -39,7 +39,9 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  /* Measured and published by Nav.tsx; the literal is only the value used
+     for the first paint, before that effect has run. */
+  scroll-padding-top: var(--nav-height, 5.5rem);
 }
 
 @media (prefers-reduced-motion: reduce) {

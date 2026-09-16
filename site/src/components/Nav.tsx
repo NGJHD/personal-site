@@ -73,6 +73,31 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const activeId = useActiveSection();
+  const barRef = useRef<HTMLDivElement>(null);
+
+  // `scroll-padding-top` is what decides where a #hash link parks a section:
+  // too small and this fixed bar covers the section's top, too large and the
+  // tail of the previous section is left showing underneath it. It used to be a
+  // hardcoded 5.5rem (88px) against a bar that actually measures 59px on a wide
+  // viewport and ~67px once the layout switches to the hamburger, so ~29px of
+  // the previous section stayed visible on every jump. Publishing the measured
+  // height keeps the two in step at any viewport size.
+  //
+  // Only the bar is measured, never the whole <header>: the mobile panel is a
+  // child of it and would add its own height to the total while open.
+  useEffect(() => {
+    const bar = barRef.current;
+    if (!bar) return;
+    const publish = () =>
+      document.documentElement.style.setProperty(
+        "--nav-height",
+        `${bar.getBoundingClientRect().height}px`
+      );
+    publish();
+    const observer = new ResizeObserver(publish);
+    observer.observe(bar);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -93,7 +118,7 @@ export default function Nav() {
 
   return (
     <header className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`}>
-      <div className={styles.inner}>
+      <div className={styles.inner} ref={barRef}>
         <a href="#top" className={styles.brand} onClick={handleLinkClick}>
           <span className={styles.brandMark} aria-hidden="true" />
           <span className={styles.brandText}>DARREN&nbsp;NG</span>

@@ -68,8 +68,15 @@
   white-space: nowrap;
 }
 
-.link:hover {
-  color: var(--accent);
+/* Touch devices keep :hover applied to the last element tapped until something
+   else is tapped, so without this guard a tapped nav link stayed accent-lit
+   long after the page had scrolled away from its section — reading as a second,
+   stuck "active" link next to the real one. Nothing on a phone can hover, so
+   the rule simply should not apply there. */
+@media (hover: hover) {
+  .link:hover {
+    color: var(--accent);
+  }
 }
 
 .linkActive {
