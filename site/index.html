@@ -11,6 +11,24 @@
     <meta name="theme-color" content="#0a0d12" />
     <title>Darren Ng</title>
 
+    <!-- Chrome on Android restores a scroll offset on reload that bears no
+         relation to where the page actually was. Measured on a real device:
+         reloading this page from y=0 landed at 236, 216, 0, 168, 223 across
+         five refreshes, and because each reload seeds the next one the offset
+         keeps wandering. Desktop Chrome (and DevTools' phone emulation)
+         restore a plain pixel offset and are unaffected, which is why this
+         only ever showed up on real phones.
+
+         scroll-padding-top, scroll-behavior, overflow-anchor and reserving the
+         document height ahead of React's first paint all made no difference —
+         opting out of the browser's restoration was the only thing that did.
+         It has to happen here rather than in the bundle so it can never lose
+         the race against the browser's own restore. The two jobs restoration
+         did legitimately for us are taken over by useHashScroll(). -->
+    <script>
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    </script>
+
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ngjhd.vercel.app/" />
     <meta property="og:title" content="Ng Jun Hao Darren" />
