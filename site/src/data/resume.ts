@@ -168,7 +168,7 @@ export const personalProjects: PersonalProject[] = [
     name: "Meeting Summariser / Minutes Generator",
     period: "Since 2026",
     description:
-      "Built an app that takes in audio and generates a summary and minutes. It hosts and uses local models for speech-to-text (whisper-large-v3-turbo) and summarisation (Qwen3.8-27B-UD-Q4_K_M). Self-contained - no installation required.",
+      "Built an app that takes in audio and generates a summary and minutes. It hosts and uses local models for speech-to-text (whisper-large-v3-turbo) and summarisation (Qwen3.8-27B-UD-IQ4_XS). Self-contained - no installation required.",
     tags: ["Claude Code", "Windows"],
     repo: "https://github.com/NGJHD/Meeting-Summarizer",
   },  
