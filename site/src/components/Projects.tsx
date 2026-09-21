@@ -14,6 +14,7 @@ import kanbanBoardImg from "../assets/images/project-kanban-board.png";
 import meetingImg from "../assets/images/project-meeting.png";
 import portKillerImg from "../assets/images/project-port-killer.png";
 import compositionMarkerImg from "../assets/images/project-composition-marker.png";
+import websiteWidgetImg from "../assets/images/project-website-widget.png";
 
 const PROJECT_VISUALS: Record<
   string,
@@ -30,6 +31,7 @@ const PROJECT_VISUALS: Record<
   "Meeting Summariser / Minutes Generator": { image: { src: meetingImg, width: 895, height: 468 } },
   "Windows Port Killer": { image: { src: portKillerImg, width: 1913, height: 1018 } },
   "Composition Marker": { image: { src: compositionMarkerImg, width: 919, height: 562 } },
+  "Website Widget": { image: { src: websiteWidgetImg, width: 1151, height: 720 } },
 };
 
 const LANDSCAPE_ASPECT = landscapeReferenceAspect(

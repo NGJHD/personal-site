@@ -148,6 +148,14 @@ export type PersonalProject = {
 
 export const personalProjects: PersonalProject[] = [
   {
+    name: "Website Widget",
+    period: "Since 2026",
+    description:
+      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Yet to decide whether to publish this on Play Store or not.",
+    tags: ["Claude Code", "Android"],
+    repo: "",
+  },
+  {
     name: "Composition Marker",
     period: "Since 2026",
     description:
