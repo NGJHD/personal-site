@@ -151,8 +151,8 @@ export const personalProjects: PersonalProject[] = [
     name: "Website Widget",
     period: "Since 2026",
     description:
-      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Yet to decide whether to publish this on Play Store or not.",
-    tags: ["Claude Code", "Android"],
+      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Yet to decide whether to commercialise it on the Play Store.",
+    tags: ["llama.cpp", "Qwen3.8 27b", "Pi Agent", "Android"],
     repo: "",
   },
   {
