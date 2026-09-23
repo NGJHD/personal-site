@@ -151,7 +151,7 @@ export const personalProjects: PersonalProject[] = [
     name: "Website Widget",
     period: "Since 2026",
     description:
-      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Yet to decide whether to commercialise it on the Play Store.",
+      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Pending release approval on Play Store.",
     tags: ["llama.cpp", "Qwen3.8 27b", "Pi Agent", "Android"],
     repo: "",
   },
@@ -180,6 +180,14 @@ export const personalProjects: PersonalProject[] = [
     tags: ["Claude Code", "Windows"],
     repo: "https://github.com/NGJHD/Meeting-Summarizer",
   },  
+  {
+    name: "Android PDF/Markdown Viewer App",
+    period: "Since 2026",
+    description:
+      "Always wanted a simple app without ads to read PDFs and Markdown files on Android. So I forked MuPDF, the simplest PDF reader I can find out there. Added much more basic functionality to it and markdown support as well.",
+    tags: ["Claude Code", "Android"],
+    repo: "https://github.com/NGJHD/mupdf-android-viewer",
+  }, 
   {
     name: "Media Whiteboard",
     period: "Since 2026",

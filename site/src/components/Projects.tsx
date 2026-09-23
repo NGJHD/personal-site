@@ -15,6 +15,7 @@ import meetingImg from "../assets/images/project-meeting.png";
 import portKillerImg from "../assets/images/project-port-killer.png";
 import compositionMarkerImg from "../assets/images/project-composition-marker.png";
 import websiteWidgetImg from "../assets/images/project-website-widget.png";
+import pdfAppImg from "../assets/images/project-pdf-app.png";
 
 const PROJECT_VISUALS: Record<
   string,
@@ -32,6 +33,7 @@ const PROJECT_VISUALS: Record<
   "Windows Port Killer": { image: { src: portKillerImg, width: 1913, height: 1018 } },
   "Composition Marker": { image: { src: compositionMarkerImg, width: 919, height: 562 } },
   "Website Widget": { image: { src: websiteWidgetImg, width: 1151, height: 720 } },
+  "Android PDF/Markdown Viewer App": { image: { src: pdfAppImg, width: 895, height: 710 } },
 };
 
 const LANDSCAPE_ASPECT = landscapeReferenceAspect(
