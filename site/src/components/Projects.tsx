@@ -28,7 +28,7 @@ const PROJECT_VISUALS: Record<
   "Movie Catalogue Software": { image: { src: movieCatalogueImg, width: 1920, height: 1152 } },
   "Media Whiteboard": { image: { src: mediaWhiteboardImg, width: 631, height: 320 } },
   "Video Trim & Crop": { image: { src: videoTrimCropImg, width: 1345, height: 853 } },
-  "Kanban Board": { image: { src: kanbanBoardImg, width: 1912, height: 879 } },
+  "Kanban Board": { image: { src: kanbanBoardImg, width: 1914, height: 1024 } },
   "Meeting Summariser / Minutes Generator": { image: { src: meetingImg, width: 895, height: 468 } },
   "Windows Port Killer": { image: { src: portKillerImg, width: 1913, height: 1018 } },
   "Composition Marker": { image: { src: compositionMarkerImg, width: 919, height: 562 } },
