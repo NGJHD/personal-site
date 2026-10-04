@@ -148,6 +148,14 @@ export type PersonalProject = {
 
 export const personalProjects: PersonalProject[] = [
   {
+    name: "Rumble Arena",
+    period: "Since 2026",
+    description:
+      "A browser based arcade fighting game inspired by One Piece. Generated all game assets locally with ComfyUI and used Claude Code to build the game. Not my best work, but tons of fun building as a One Piece fan :)",
+    tags: ["Claude Code", "ComfyUI"],
+    repo: "https://github.com/NGJHD/rumble-arena",
+  },
+  {
     name: "Website Widget",
     period: "Since 2026",
     description:

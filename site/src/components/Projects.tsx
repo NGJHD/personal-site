@@ -16,6 +16,7 @@ import portKillerImg from "../assets/images/project-port-killer.png";
 import compositionMarkerImg from "../assets/images/project-composition-marker.png";
 import websiteWidgetImg from "../assets/images/project-website-widget.png";
 import pdfAppImg from "../assets/images/project-pdf-app.png";
+import rumbleArena from "../assets/images/project-rumble-arena.png";
 
 const PROJECT_VISUALS: Record<
   string,
@@ -32,8 +33,9 @@ const PROJECT_VISUALS: Record<
   "Meeting Summariser / Minutes Generator": { image: { src: meetingImg, width: 895, height: 468 } },
   "Windows Port Killer": { image: { src: portKillerImg, width: 1913, height: 1018 } },
   "Composition Marker": { image: { src: compositionMarkerImg, width: 919, height: 562 } },
-  "Website Widget": { image: { src: websiteWidgetImg, width: 1151, height: 720 } },
+  "Website Widget": { image: { src: websiteWidgetImg, width: 1024, height: 500 } },
   "Android PDF/Markdown Viewer App": { image: { src: pdfAppImg, width: 895, height: 710 } },
+  "Rumble Arena": { image: { src: rumbleArena, width: 1688, height: 1013 } },
 };
 
 const LANDSCAPE_ASPECT = landscapeReferenceAspect(
