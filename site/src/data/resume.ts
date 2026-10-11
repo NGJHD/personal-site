@@ -151,16 +151,16 @@ export const personalProjects: PersonalProject[] = [
     name: "Spellcaster Academy",
     period: "Since 2026",
     description:
-      "A browser based typing game. Generated all game assets locally with ComfyUI and used Claude Code to build the game. Still work in progress.",
-    tags: ["Claude Code", "ComfyUI"],
+      "A browser-based typing game for kids, disguised as an on-rails shooter with a 3-level story arc. Because apparently, shooting things is more motivating than typing drills these days. Still a work in progress.",
+    tags: ["Claude Code"],
     repo: "",
   },
   {
     name: "Rumble Arena",
     period: "Since 2026",
     description:
-      "A browser based arcade fighting game inspired by One Piece. Generated all game assets locally with ComfyUI and used Claude Code to build the game. Not my best work, but tons of fun building as a One Piece fan :)",
-    tags: ["Claude Code", "ComfyUI"],
+      "One Piece meets Marvel vs. Capcom! A browser-based arcade fighter built with Claude Code. Not my best work, but tons of fun building it and mashing buttons with my kids. :)",
+    tags: ["Claude Code"],
     repo: "https://github.com/NGJHD/rumble-arena",
   },
   {
