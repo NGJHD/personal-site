@@ -17,6 +17,7 @@ import compositionMarkerImg from "../assets/images/project-composition-marker.pn
 import websiteWidgetImg from "../assets/images/project-website-widget.png";
 import pdfAppImg from "../assets/images/project-pdf-app.png";
 import rumbleArena from "../assets/images/project-rumble-arena.webp";
+import spellcasterAcademy from "../assets/images/project-spellcaster-academy.webp";
 
 const PROJECT_VISUALS: Record<
   string,
@@ -36,6 +37,7 @@ const PROJECT_VISUALS: Record<
   "Website Widget": { image: { src: websiteWidgetImg, width: 1024, height: 500 } },
   "Android PDF/Markdown Viewer App": { image: { src: pdfAppImg, width: 640, height: 360 } },
   "Rumble Arena": { image: { src: rumbleArena, width: 1688, height: 1013 } },
+  "Spellcaster Academy": { image: { src: spellcasterAcademy, width: 600, height: 360 } },
 };
 
 const LANDSCAPE_ASPECT = landscapeReferenceAspect(

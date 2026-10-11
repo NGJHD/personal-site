@@ -148,6 +148,14 @@ export type PersonalProject = {
 
 export const personalProjects: PersonalProject[] = [
   {
+    name: "Spellcaster Academy",
+    period: "Since 2026",
+    description:
+      "A browser based typing game. Generated all game assets locally with ComfyUI and used Claude Code to build the game. Still work in progress.",
+    tags: ["Claude Code", "ComfyUI"],
+    repo: "",
+  },
+  {
     name: "Rumble Arena",
     period: "Since 2026",
     description:
