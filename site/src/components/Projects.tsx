@@ -16,7 +16,7 @@ import portKillerImg from "../assets/images/project-port-killer.png";
 import compositionMarkerImg from "../assets/images/project-composition-marker.png";
 import websiteWidgetImg from "../assets/images/project-website-widget.png";
 import pdfAppImg from "../assets/images/project-pdf-app.png";
-import rumbleArena from "../assets/images/project-rumble-arena.png";
+import rumbleArena from "../assets/images/project-rumble-arena.webp";
 
 const PROJECT_VISUALS: Record<
   string,
