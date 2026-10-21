@@ -5,7 +5,7 @@ import styles from "./Hobbies.module.css";
 import photographyGrid from "../assets/images/hobby-photography.jpg";
 import pcBuild1 from "../assets/images/hobby-pc-build-1.jpg";
 import moviesGrid from "../assets/images/hobby-movies.jpg";
-import aiFilm from "../assets/images/hobby-aifilm.jpg";
+import aiFilm from "../assets/images/hobby-aifilm.webp";
 import aiArt from "../assets/images/hobby-aiart.jpg";
 
 type HobbyVisual = {
