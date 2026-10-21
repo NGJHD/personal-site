@@ -151,7 +151,7 @@ export const personalProjects: PersonalProject[] = [
     name: "Spellcaster Academy",
     period: "Since 2026",
     description:
-      "A browser-based typing game for kids, disguised as an on-rails shooter with a 3-level story arc. Because apparently, shooting things is more motivating than typing drills these days. Still a work in progress.",
+      "A browser-based typing game for kids, disguised as an on-rails shooter with a 3-level story arc. Because apparently, shooting things is more motivating than typing drills these days.",
     tags: ["Claude Code"],
     repo: "",
   },
