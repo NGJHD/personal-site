@@ -153,7 +153,7 @@ export const personalProjects: PersonalProject[] = [
     description:
       "A browser-based typing game for kids, disguised as an on-rails shooter with a 3-level story arc. Because apparently, shooting things is more motivating than typing drills these days.",
     tags: ["Claude Code"],
-    repo: "",
+    repo: "https://github.com/NGJHD/spellcaster-academy",
   },
   {
     name: "Rumble Arena",
