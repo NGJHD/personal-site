@@ -150,7 +150,7 @@ export default function SteppedSection({
         <div className={styles.carousel}>
           <button
             type="button"
-            className={styles.arrow}
+            className={`${styles.arrow} ${styles.arrowPrev}`}
             onClick={() => step(-1)}
             aria-label="Previous card"
           >
@@ -192,7 +192,7 @@ export default function SteppedSection({
 
           <button
             type="button"
-            className={styles.arrow}
+            className={`${styles.arrow} ${styles.arrowNext}`}
             onClick={() => step(1)}
             aria-label="Next card"
           >
@@ -200,18 +200,18 @@ export default function SteppedSection({
               <path d="M9 5L16 12L9 19" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
-        </div>
 
-        <div className={styles.dots}>
-          {steps.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              aria-label={`Go to card ${i + 1}`}
-              className={`${styles.dot} ${i === active ? styles.dotActive : ""}`}
-              onClick={() => goTo(i)}
-            />
-          ))}
+          <div className={styles.dots}>
+            {steps.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`Go to card ${i + 1}`}
+                className={`${styles.dot} ${i === active ? styles.dotActive : ""}`}
+                onClick={() => goTo(i)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

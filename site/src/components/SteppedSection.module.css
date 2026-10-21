@@ -14,11 +14,26 @@
   z-index: 1;
 }
 
+/* Grid areas let mobile move the arrows down beside the dots (freeing
+   the card's full width) without duplicating the buttons in the DOM. */
 .carousel {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "prev viewport next"
+    "dots dots dots";
   align-items: center;
-  gap: clamp(0.75rem, 2vw, 1.5rem);
+  column-gap: clamp(0.75rem, 2vw, 1.5rem);
+  row-gap: clamp(1.25rem, 3vw, 2rem);
   margin-top: clamp(2rem, 5vw, 3rem);
+}
+
+.arrowPrev {
+  grid-area: prev;
+}
+
+.arrowNext {
+  grid-area: next;
 }
 
 .arrow {
@@ -54,7 +69,7 @@
 }
 
 .cardViewport {
-  flex: 1;
+  grid-area: viewport;
   min-width: 0;
   display: grid;
   overflow: hidden;
@@ -96,10 +111,10 @@
 }
 
 .dots {
+  grid-area: dots;
   display: flex;
   justify-content: center;
   gap: 0.4rem;
-  margin-top: clamp(1.25rem, 3vw, 2rem);
 }
 
 .dot {
@@ -136,7 +151,12 @@
   }
 
   .carousel {
-    gap: 0.5rem;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    grid-template-areas:
+      "viewport viewport viewport viewport viewport"
+      ". prev dots next .";
+    column-gap: 0.75rem;
+    row-gap: 1.25rem;
   }
 }
 
