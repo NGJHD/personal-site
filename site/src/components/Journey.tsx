@@ -343,7 +343,7 @@ export default function Journey() {
     <>
       <div className="section-head">
         <span className="eyebrow">02 // Career</span>
-        <h2 className="section-title">13 years, one employer, many mission systems.</h2>
+        <h2 className="section-title">14 years, one employer, many mission systems.</h2>
       </div>
       <div className={styles.employerHead}>
         <span className={`status-dot ${employer.status}`} />
