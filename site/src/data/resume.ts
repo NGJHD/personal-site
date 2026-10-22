@@ -156,6 +156,14 @@ export const personalProjects: PersonalProject[] = [
     repo: "https://github.com/NGJHD/spellcaster-academy",
   },
   {
+    name: "PM2.5 Widget",
+    period: "",
+    description:
+      "Built a tiny Android widget to show the current 1-hour PM2.5 level. Just a 1×1 widget - No fluff. So why not use the official MyENV app? Because their smallest size is a 3x1 widget and real estate is a premium on my home screen. 😒",
+    tags: ["Claude Code"],
+    repo: "https://github.com/NGJHD/sg-pm25-widget",
+  },
+  {
     name: "Rumble Arena",
     period: "",
     description:
