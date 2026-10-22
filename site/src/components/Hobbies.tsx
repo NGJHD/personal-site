@@ -7,6 +7,8 @@ import pcBuild1 from "../assets/images/hobby-pc-build-1.jpg";
 import moviesGrid from "../assets/images/hobby-movies.jpg";
 import aiFilm from "../assets/images/hobby-aifilm.webp";
 import aiArt from "../assets/images/hobby-aiart.jpg";
+import reading from "../assets/images/hobby-reading.webp";
+import dailyBriefs from "../assets/images/hobby-dailybriefs.webp";
 
 type HobbyVisual = {
   image: { src: string; width: number; height: number };
@@ -18,16 +20,24 @@ type HobbyVisual = {
 
 const DEFAULT_SCALE = 1.8;
 
-const HOBBY_VISUALS: Record<string, HobbyVisual> = {
+const HOBBY_VISUALS: Record<string, HobbyVisual> = {  
   "AI Filmmaking with ComfyUI": {
     image: { src: aiFilm, width: 1916, height: 1017 },
     alt: "AI Filmmaking",
+  },
+  "Daily Briefs": {
+    image: { src: dailyBriefs, width: 1150, height: 724 },
+    alt: "Daily Briefs",
   },
   "Generative Art with ComfyUI": {
     image: { src: aiArt, width: 1811, height: 1080 },
     alt: "Generative Art",
   },
-  Photography: {
+  "Reading": {
+    image: { src: reading, width: 1280, height: 720 },
+    alt: "Reading",
+  },
+  "Photography": {
     image: { src: photographyGrid, width: 1894, height: 945 },
     alt: "Photography samples",
   },
