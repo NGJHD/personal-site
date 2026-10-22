@@ -124,9 +124,9 @@ export const missionApps: MissionApp[] = [
     tags: [],
   },
   {
-    name: "Water Cannon",
+    name: "Subsystem Control",
     description:
-      "Controlling and enabling precise targeting.",
+      "Control software integrating shipboard hardware subsystem.",
     tags: [],
   },
   {
@@ -149,7 +149,7 @@ export type PersonalProject = {
 export const personalProjects: PersonalProject[] = [
   {
     name: "Spellcaster Academy",
-    period: "Since 2026",
+    period: "",
     description:
       "A browser-based typing game for kids, disguised as an on-rails shooter with a 3-level story arc. Because apparently, shooting things is more motivating than typing drills these days.",
     tags: ["Claude Code"],
@@ -157,7 +157,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Rumble Arena",
-    period: "Since 2026",
+    period: "",
     description:
       "One Piece meets Marvel vs. Capcom! A browser-based arcade fighter built with Claude Code. Not my best work, but tons of fun building it and mashing buttons with my kids. :)",
     tags: ["Claude Code"],
@@ -165,7 +165,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Website Widget",
-    period: "Since 2026",
+    period: "",
     description:
       "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Pending release approval on Play Store.",
     tags: ["llama.cpp", "Qwen3.8 27b", "Pi Agent", "Android"],
@@ -173,7 +173,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Composition Marker",
-    period: "Since 2026",
+    period: "",
     description:
       "An app that marks handwritten compositions from photos and generates feedback using a bundled, locally hosted Qwen3.8-27B model. Self-contained - no installation required.",
     tags: ["Claude Code", "Windows"],
@@ -181,7 +181,7 @@ export const personalProjects: PersonalProject[] = [
   },  
   {
     name: "Wave Keep",
-    period: "Since 2026",
+    period: "",
     description:
       "Built a tower defense game for kids on Android. Generated all the game assets locally with ComfyUI and used Claude Code to build the game. Published on Play Store.",
     tags: ["Claude Code", "ComfyUI", "Android"],
@@ -190,7 +190,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Meeting Summariser / Minutes Generator",
-    period: "Since 2026",
+    period: "",
     description:
       "Built an app that takes in audio and generates a summary and minutes. It hosts and uses local models for speech-to-text (whisper-large-v3-turbo) and summarisation (Qwen3.8-27B-UD-IQ4_XS). Self-contained - no installation required.",
     tags: ["Claude Code", "Windows"],
@@ -198,7 +198,7 @@ export const personalProjects: PersonalProject[] = [
   },  
   {
     name: "Android PDF/Markdown Viewer App",
-    period: "Since 2026",
+    period: "",
     description:
       "Always wanted a simple app without ads to read PDFs and Markdown files on Android. So I forked MuPDF, the simplest PDF reader I can find out there. Added much more basic functionality to it and markdown support as well.",
     tags: ["Claude Code", "Android"],
@@ -206,7 +206,7 @@ export const personalProjects: PersonalProject[] = [
   }, 
   {
     name: "Media Whiteboard",
-    period: "Since 2026",
+    period: "",
     description:
       "Ever wanted to make a collage or animated collage without dealing with complicated apps? I built an app just for that. Drop in your images, annotate, hit generate and your static or animated WebP is ready to upload. Self-contained - no installation required.",
     tags: ["Claude Code", "Windows"],
@@ -214,7 +214,7 @@ export const personalProjects: PersonalProject[] = [
   },  
   {
     name: "Video Trim & Crop",
-    period: "Since 2026",
+    period: "",
     description:
       "Just need to rotate, crop, or trim a video without firing up Adobe Premiere? I built a simple app for exactly that. Self-contained - no installation required.",
     tags: ["Claude Code", "Windows"],
@@ -222,7 +222,7 @@ export const personalProjects: PersonalProject[] = [
   },  
   {
     name: "Stock Thesis Monitor Bot",
-    period: "Since 2026",
+    period: "",
     description:
       "Built a bot that monitors Yahoo News daily for updates relevant to my numerous stock investment theses and delivers a curated daily summary via Telegram.",
     tags: ["OpenRouter API", "Claude Code", "Windows", "Telegram"],
@@ -230,7 +230,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Windows Port Killer",
-    period: "Since 2026",
+    period: "",
     description:
       "Built a tool to easily kill processes running on specific ports on Windows. It's actually a simple utility but I like the UI so I'm listing it here 😂. Self-contained - no installation required",
     tags: ["Claude Code", "Windows"],
@@ -238,7 +238,7 @@ export const personalProjects: PersonalProject[] = [
   },
   {
     name: "Kanban Board",
-    period: "Since 2026",
+    period: "",
     description:
       "Tons of Kanban boards out there. None did what I wanted with a priority tag, so naturally I bullied Claude into making one 😂. Self-contained - no installation required",
     tags: ["Claude Code", "Windows"],

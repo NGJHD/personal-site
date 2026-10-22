@@ -28,7 +28,7 @@ const PROJECT_IMAGES: Record<string, StepImage> = {
 
 const SUBAPP_IMAGES: Record<string, StepImage> = {
   "Command Console": { src: commandConsoleImg, width: 698, height: 393 },
-  "Water Cannon": { src: watercannonImg, width: 508, height: 338 },
+  "Subsystem Control": { src: watercannonImg, width: 508, height: 338 },
   "Communications": { src: chatpostitImg, width: 752, height: 564 },
 };
 
