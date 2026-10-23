@@ -264,7 +264,7 @@ export const personalProjects: PersonalProject[] = [
     name: "Music Folder Player",
     period: "Since 2016",
     description:
-      "Built a lightweight, portable C# folder-based music player to simplify playlist management on Windows.",
+      "Built a lightweight, portable C# music player that treats your folders as playlists. No library to import, nothing to sync: point it at a folder and press play.",
     tags: ["C#", "WPF", ".NET", "Windows"],
     repo: "https://github.com/NGJHD/FolderPlayer",
 
