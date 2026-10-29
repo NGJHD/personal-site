@@ -175,9 +175,10 @@ export const personalProjects: PersonalProject[] = [
     name: "Website Widget",
     period: "",
     description:
-      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Pending release approval on Play Store.",
+      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Published on Play Store.",
     tags: ["llama.cpp", "Qwen3.8 27b", "Pi Agent", "Android"],
     repo: "",
+    playStore: "https://play.google.com/store/apps/details?id=com.ngjhd.websitewidget",
   },
   {
     name: "Composition Marker",
