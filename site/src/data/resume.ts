@@ -175,7 +175,7 @@ export const personalProjects: PersonalProject[] = [
     name: "Website Widget",
     period: "",
     description:
-      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Published on Play Store.",
+      "An android app that allows you to add a widget displaying a website. Auto refreshes, useful for News, Stats etc. Built this using a local LLM. Published and sold on Play Store.",
     tags: ["llama.cpp", "Qwen3.8 27b", "Pi Agent", "Android"],
     repo: "",
     playStore: "https://play.google.com/store/apps/details?id=com.ngjhd.websitewidget",
@@ -309,7 +309,7 @@ export const hobbies: Hobby[] = [
   {
     name: "Reading",
     period: "",
-    description: "A sucker for romantasy - a dozen different heroines but exactly one type of man. Also still following One Piece, nearly three decades in. At this point it's less a hobby than a lifelong commitment.",
+    description: "A sucker for romantasy - a dozen different heroines but exactly one type of man. Also still following One Piece, nearly three decades in. Though at this point, it's less a hobby than a lifelong commitment.",
   },
   {
     name: "Photography",
