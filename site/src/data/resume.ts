@@ -169,7 +169,7 @@ export const personalProjects: PersonalProject[] = [
     description:
       "One Piece meets Marvel vs. Capcom! A browser-based arcade fighter built with Claude Code. Not my best work, but tons of fun building it and mashing buttons with my kids. :)",
     tags: ["Claude Code"],
-    repo: "https://github.com/NGJHD/rumble-arena",
+    repo: "",
   },
   {
     name: "Website Widget",
