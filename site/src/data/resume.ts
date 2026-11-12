@@ -148,6 +148,14 @@ export type PersonalProject = {
 
 export const personalProjects: PersonalProject[] = [
   {
+    name: "Meeting Transcriber Live",
+    period: "",
+    description:
+      "Built an offline AI meeting assistant that captures audio through a microphone, transcribes conversations in real time, and generates rolling 5-minute summaries. Ensuring even your toilet breaks are fully briefed.",
+    tags: ["Claude Code"],
+    repo: "https://github.com/NGJHD/meeting-summarizer-realtime",
+  },
+  {
     name: "Spellcaster Academy",
     period: "",
     description:
@@ -162,8 +170,7 @@ export const personalProjects: PersonalProject[] = [
       "Built a One Piece Math adventure for my 6-year-old. Solve Math problems, earn Berries, recruit your favourite characters and defend your island. Piracy starts at a young age.",
     tags: ["Claude Code"],
     repo: "",
-  },
-  
+  },  
   {
     name: "PM2.5 Widget",
     period: "",

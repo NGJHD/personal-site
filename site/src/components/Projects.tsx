@@ -22,6 +22,7 @@ import rumbleArena from "../assets/images/project-rumble-arena.webp";
 import spellcasterAcademy from "../assets/images/project-spellcaster-academy.mp4";
 import pm25WidgetImg from "../assets/images/project-pm25-widget.webp";
 import mathGameImg from "../assets/images/project-mathGameImg.webp";
+import meetingRealtimeImg from "../assets/images/project-meeting-realtime.jpg";
 
 const PROJECT_VISUALS: Record<
   string,
@@ -44,6 +45,7 @@ const PROJECT_VISUALS: Record<
   "Spellcaster Academy": { image: { src: spellcasterAcademy, width: 600, height: 360 } },
   "PM2.5 Widget": { image: { src: pm25WidgetImg, width: 1280, height: 720 } },
   "Math Game": { image: { src: mathGameImg, width: 1920, height: 858 } },
+  "Meeting Transcriber Live": { image: { src: meetingRealtimeImg, width: 600, height: 360 } },
 };
 
 const LANDSCAPE_ASPECT = landscapeReferenceAspect(
