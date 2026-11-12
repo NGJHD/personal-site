@@ -21,6 +21,7 @@ import pdfAppImg from "../assets/images/project-pdf-app.png";
 import rumbleArena from "../assets/images/project-rumble-arena.webp";
 import spellcasterAcademy from "../assets/images/project-spellcaster-academy.mp4";
 import pm25WidgetImg from "../assets/images/project-pm25-widget.webp";
+import mathGameImg from "../assets/images/project-mathGameImg.webp";
 
 const PROJECT_VISUALS: Record<
   string,
@@ -42,6 +43,7 @@ const PROJECT_VISUALS: Record<
   "Rumble Arena": { image: { src: rumbleArena, width: 1688, height: 1013 } },
   "Spellcaster Academy": { image: { src: spellcasterAcademy, width: 600, height: 360 } },
   "PM2.5 Widget": { image: { src: pm25WidgetImg, width: 1280, height: 720 } },
+  "Math Game": { image: { src: mathGameImg, width: 1920, height: 858 } },
 };
 
 const LANDSCAPE_ASPECT = landscapeReferenceAspect(

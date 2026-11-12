@@ -156,6 +156,15 @@ export const personalProjects: PersonalProject[] = [
     repo: "https://github.com/NGJHD/spellcaster-academy",
   },
   {
+    name: "Math Game",
+    period: "",
+    description:
+      "Built a One Piece Math adventure for my 6-year-old. Solve Math problems, earn Berries, recruit your favourite characters and defend your island. Piracy starts at a young age.",
+    tags: ["Claude Code"],
+    repo: "",
+  },
+  
+  {
     name: "PM2.5 Widget",
     period: "",
     description:
