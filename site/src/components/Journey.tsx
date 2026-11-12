@@ -1,4 +1,5 @@
 import { useRef, useState, type ReactNode, type TouchEvent } from "react";
+import { richText } from "../lib/richText";
 import { experience, missionApps, type MissionApp } from "../data/resume";
 import { imageFit, landscapeReferenceAspect } from "../lib/imageFit";
 import { useMediaQuery } from "../hooks/useMediaQuery";
@@ -75,7 +76,7 @@ function StepCard({
           {duration && <span className={`mono ${styles.stepDuration}`}>{duration}</span>}
         </div>
         {meta && <div className={styles.meta}>{meta}</div>}
-        <p className={styles.stepDescription}>{description}</p>
+        <p className={styles.stepDescription}>{richText(description)}</p>
         <div className={styles.tags}>
           {tags.map((tag) => (
             <span key={tag} className="tag">
@@ -188,7 +189,7 @@ function LmvCard({
               {duration && <span className={`mono ${styles.stepDuration}`}>{duration}</span>}
             </div>
             {meta && <div className={styles.meta}>{meta}</div>}
-            <p className={styles.stepDescription}>{description}</p>
+            <p className={styles.stepDescription}>{richText(description)}</p>
             <div className={styles.tags}>
               {tags.map((tag) => (
                 <span key={tag} className="tag">
@@ -211,7 +212,7 @@ function LmvCard({
                     </div>
                   )}
                   <span className={styles.subAppName}>{app.name}</span>
-                  <p className={styles.subAppDesc}>{app.description}</p>
+                  <p className={styles.subAppDesc}>{richText(app.description)}</p>
                 </div>
               );
             })}
@@ -260,7 +261,7 @@ function LmvCard({
                 {p.duration && <span className={`mono ${styles.stepDuration}`}>{p.duration}</span>}
               </div>
               {p.meta && <div className={styles.meta}>{p.meta}</div>}
-              <p className={styles.stepDescription}>{p.description}</p>
+              <p className={styles.stepDescription}>{richText(p.description)}</p>
               <div className={styles.tags}>
                 {p.tags.map((tag) => (
                   <span key={tag} className="tag">

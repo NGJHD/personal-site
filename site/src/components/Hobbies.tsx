@@ -1,14 +1,17 @@
 import { hobbies, isEndedPeriod } from "../data/resume";
+import { richText } from "../lib/richText";
 import { imageFit, landscapeReferenceAspect } from "../lib/imageFit";
 import SteppedSection from "./SteppedSection";
+import Media from "./Media";
 import styles from "./Hobbies.module.css";
 import photographyGrid from "../assets/images/hobby-photography.jpg";
 import pcBuild1 from "../assets/images/hobby-pc-build-1.jpg";
 import moviesGrid from "../assets/images/hobby-movies.jpg";
-import aiFilm from "../assets/images/hobby-aifilm.webp";
+import aiFilm from "../assets/images/hobby-aifilm.mp4";
 import aiArt from "../assets/images/hobby-aiart.jpg";
 import reading from "../assets/images/hobby-reading.webp";
-import dailyBriefs from "../assets/images/hobby-dailybriefs.webp";
+import morningDailyBrief from "../assets/images/darrens_daily_blue_1280x720.mp4";
+import eveningDailyBrief from "../assets/images/premarket_report_1280x720.mp4";
 
 type HobbyVisual = {
   image: { src: string; width: number; height: number };
@@ -25,9 +28,13 @@ const HOBBY_VISUALS: Record<string, HobbyVisual> = {
     image: { src: aiFilm, width: 1916, height: 1017 },
     alt: "AI Filmmaking",
   },
-  "Daily Briefs": {
-    image: { src: dailyBriefs, width: 1150, height: 724 },
-    alt: "Daily Briefs",
+  "Morning Daily Brief": {
+    image: { src: morningDailyBrief, width: 1280, height: 720 },
+    alt: "Morning Daily Brief",
+  },
+  "Evening Daily Brief": {
+    image: { src: eveningDailyBrief, width: 1280, height: 720 },
+    alt: "Evening Daily Brief",
   },
   "Generative Art with ComfyUI": {
     image: { src: aiArt, width: 1811, height: 1080 },
@@ -68,7 +75,7 @@ export default function Hobbies() {
       <div key={hobby.name} className={`hud-panel ${styles.stepCard}`}>
         {visual && (
           <div className={styles.stepFigure}>
-            <img
+            <Media
               src={visual.image.src}
               alt={visual.alt}
               width={visual.image.width}
@@ -88,7 +95,7 @@ export default function Hobbies() {
               {hobby.period}
             </span>
           </div>
-          <p className={styles.description}>{hobby.description}</p>
+          <p className={styles.description}>{richText(hobby.description)}</p>
         </div>
       </div>
     );

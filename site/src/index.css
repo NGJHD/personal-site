@@ -381,9 +381,9 @@ img {
 /* Portrait images are letterboxed into the box the tallest landscape image in
    their group would occupy, so they can't push a card taller than the landscape
    ones already do. --landscape-aspect is set per group in src/lib/imageFit.ts.
-   Typed as `img.portrait-capped` so it outranks the single-class .visualImage /
+   Typed as `.portrait-capped:is(img, video)` so it outranks the single-class .visualImage /
    .wideImage / .stepImage rules regardless of stylesheet order. */
-img.portrait-capped {
+.portrait-capped:is(img, video) {
   aspect-ratio: var(--landscape-aspect);
   height: auto;
 }
@@ -399,7 +399,7 @@ img.portrait-capped {
    `height: 100%` lets the image *use* the leftover space it didn't ask for.
    Desktop is deliberately left on the plain cap. */
 @media (max-width: 640px) {
-  img.portrait-capped {
+  .portrait-capped:is(img, video) {
     height: 100%;
   }
 }

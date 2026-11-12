@@ -1,7 +1,9 @@
 import type { ComponentType } from "react";
+import { richText } from "../lib/richText";
 import { personalProjects, isEndedPeriod } from "../data/resume";
 import { imageFit, landscapeReferenceAspect } from "../lib/imageFit";
 import SteppedSection from "./SteppedSection";
+import Media from "./Media";
 import styles from "./Projects.module.css";
 import musicPlayerImg from "../assets/images/project-music-player.jpg";
 import movieCatalogueImg from "../assets/images/project-movie-catalogue.jpg";
@@ -17,7 +19,7 @@ import compositionMarkerImg from "../assets/images/project-composition-marker.pn
 import websiteWidgetImg from "../assets/images/project-website-widget.png";
 import pdfAppImg from "../assets/images/project-pdf-app.png";
 import rumbleArena from "../assets/images/project-rumble-arena.webp";
-import spellcasterAcademy from "../assets/images/project-spellcaster-academy.webp";
+import spellcasterAcademy from "../assets/images/project-spellcaster-academy.mp4";
 import pm25WidgetImg from "../assets/images/project-pm25-widget.webp";
 
 const PROJECT_VISUALS: Record<
@@ -55,7 +57,7 @@ export default function Projects() {
       <div key={project.name} className={`hud-panel ${styles.stepCard}`}>
         <div className={styles.visual}>
           {visual?.image && (
-            <img
+            <Media
               src={visual.image.src}
               alt=""
               width={visual.image.width}
@@ -97,7 +99,7 @@ export default function Projects() {
               {project.period}
             </span>
           </div>
-          <p className={styles.description}>{project.description}</p>
+          <p className={styles.description}>{richText(project.description)}</p>
           <div className={styles.tags}>
             {project.tags.map((tag) => (
               <span key={tag} className="tag">
